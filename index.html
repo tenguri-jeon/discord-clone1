@@ -1,21 +1,29 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ko">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="../discord-clone1/reset.css">
+    <title>Discord</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/discord.css">
 </head>
 <body>
     <header>
         <div class="header-container">
-            <h1><a href="#">discord</a></h1>
-            <figure></figure>
+            <h1>
+                <a href="#"><span class="hide">discord</a></span>
+            <!-- suv끌어다가 넣고 접으면 됨 -->
+            </h1>
             <div class="header-container-text">
+                <div class="pc-view-header"></div>
                 <a href="#">피드백</a>
                 <a href="#">한국어</a>
                 <a href="#">문의 등록</a>
+            <div class="mobile-view-header">
+                햄버거
+            </div>
+
                 <a href="#">로그인</a>
             </div>
         </div>
@@ -26,21 +34,22 @@
         <h2 class="intro-text">고객 지원 센터</h2>
         <div class="search">
             <figure class="search-icon">
-                <input type="검색">
             </figure>
+            <!-- input은 타입을 정하는 것 임으로 search 혹 type을 넣어야 함 -->
+            <input type="search" placeholder="검색">
         </div>
     </div>
 </div>
-
+<!-- div 아닌 section으로 넣어주기 -->
 <div id="section-main">
     <div class="main-container">
         <h2 class="main-headline">도움이 필요하신가요? 저희가 도와드리겟습니다.</h2>
         <p class="main-explane">계정 설정부터 승인까지Discord와 관련된 모든 것을 문의하세요. <br>
             Discord를 시작한 지 얼마 안 되어 팁을 찾고 계신가요? 그렇다면, 저희의   
-            <a href="#" class="easy-explaen"> 초보자를 위한 가이드를 확인해 보세요! </p></a> 
+            <a href="#" class="easy-explaen"> 초보자를 위한 가이드를 확인해 보세요! </a> </p>
     </div>
 </div>
-
+<!-- class의 img 이름 바꿔주기 img-section 등 -->
 <div class="main-selection-area">
     <div class="selection-area-content">
         <figure class="img"></figure>
@@ -139,7 +148,7 @@
 <footer>
     <div id="footer-area">
         <div class="more">
-            <a href="#" class="more-text">자세히</h2>
+            <a href="#" class="more-text">자세히</a>
         </div>
         <figure class="footer-contents"></figure>
         <figure class="footer-discord-logo"></figure>
@@ -158,9 +167,11 @@
     </div>
 <div class="i-can-help-you">
     <figure class="question"></figure>
-    <a href="#" class="help">고객센터</p>
+    <a href="#" class="help">고객센터</a>
 </div>
 </footer>
 
+<!-- html사이트에 넣어서 돌려보기 "w3cv" -->
+ 
 </body>
 </html>
